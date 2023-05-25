@@ -49,5 +49,4 @@ hs_err_pid*
 .project
 .settings
 target
-.idea
-*.iml
+.idea *.iml
