@@ -13,5 +13,5 @@ alibaba:
     access-key: xx
     secret-key: xx
     oss:
-      endpoint: oss-cn-hangzhou.aliyuncs.com
-      bucket: yygh-parent15
+      endpoint: xx
+      bucket: xx
