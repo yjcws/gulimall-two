@@ -1,9 +1,4 @@
-package com.example.thridparty.controller;/**
- * @ClassName: OssController
- * @Description:
- * @Author: yjc
- * @Date: 2023/4/18 22:09
- */
+package com.example.thridparty.controller;
 
 import com.aliyun.oss.OSS;
 import com.aliyun.oss.OSSClientBuilder;
