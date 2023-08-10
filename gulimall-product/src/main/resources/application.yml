@@ -24,6 +24,7 @@ mybatis-plus:
     db-config:
       id-type: auto
 
+#打印sql语句
 logging:
   level:
     com.example.product: debug
