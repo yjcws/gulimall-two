@@ -2,6 +2,7 @@ package com.example.product.entity;
 
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+
 import com.example.common.valid.AddGroup;
 import com.example.common.valid.ListValue;
 import com.example.common.valid.UpdateGroup;
@@ -12,11 +13,11 @@ import org.hibernate.validator.constraints.URL;
 import javax.validation.constraints.*;
 import java.io.Serializable;
 
-
 /**
- * @description 品牌
+ * 品牌
+ * 
  * @Author: yjc
- * @Date: 2023/8/9 22:04
+ * @date 2020-05-22 19:00:18
  */
 @Data
 @TableName("pms_brand")

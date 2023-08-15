@@ -2,17 +2,15 @@ package com.example.product.entity;
 
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.Data;
 
 import java.io.Serializable;
-import java.util.Date;
-import lombok.Data;
 
 /**
  * 商品属性
  * 
- * @author chenshun
- * @email sunlightcs@gmail.com
- * @date 2023-04-04 00:18:16
+ * @Author: yjc
+ * @date 2020-05-22 19:00:18
  */
 @Data
 @TableName("pms_attr")
@@ -33,10 +31,6 @@ public class AttrEntity implements Serializable {
 	 */
 	private Integer searchType;
 	/**
-	 * 值类型[0-为单个值，1-可以选择多个值]
-	 */
-	private Integer valueType;
-	/**
 	 * 属性图标
 	 */
 	private String icon;
@@ -45,7 +39,7 @@ public class AttrEntity implements Serializable {
 	 */
 	private String valueSelect;
 	/**
-	 * 属性类型[0-销售属性，1-基本属性
+	 * 属性类型[0-销售属性，1-基本属性，2-既是销售属性又是基本属性]
 	 */
 	private Integer attrType;
 	/**
@@ -60,5 +54,7 @@ public class AttrEntity implements Serializable {
 	 * 快速展示【是否展示在介绍上；0-否 1-是】，在sku中仍然可以调整
 	 */
 	private Integer showDesc;
+
+
 
 }

@@ -188,7 +188,7 @@ public class AttrServiceImpl extends ServiceImpl<AttrDao, AttrEntity> implements
             relationEntity.setAttrGroupId(attr.getAttrGroupId());
             relationEntity.setAttrId(attr.getAttrId());
 
-            Long count = relationDao.selectCount(new QueryWrapper<AttrAttrgroupRelationEntity>()
+            Integer count = relationDao.selectCount(new QueryWrapper<AttrAttrgroupRelationEntity>()
                     .eq("attr_id", attr.getAttrId()));
 
             if (count > 0) {
