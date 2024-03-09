@@ -1,4 +1,4 @@
-package com.example.product.config;// package com.example.gulimall.product.config;
+package org.example.ware.config;// package com.example.gulimall.product.config;
 //
 // import com.fasterxml.jackson.annotation.JsonAutoDetect;
 // import com.fasterxml.jackson.annotation.PropertyAccessor;
