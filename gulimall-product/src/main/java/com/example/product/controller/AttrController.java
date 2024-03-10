@@ -34,6 +34,18 @@ public class AttrController {
     private ProductAttrValueService productAttrValueService;
 
     /**
+     *  获取spu规格
+     */
+    @GetMapping("/base/listforspu/{spuId}")
+    public R baseAttrlistforspu(@PathVariable("spuId") Long spuId){
+
+        List<ProductAttrValueEntity> entities = productAttrValueService.baseAttrListforspu(spuId);
+
+        return R.ok().put("data",entities);
+    }
+
+
+    /**
      * 查询规格参数信息
      * @param params
      * @param catelogId
@@ -105,6 +117,8 @@ public class AttrController {
 
         return R.ok();
     }
+
+
 
     /**
      * 删除
