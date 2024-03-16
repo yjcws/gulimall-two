@@ -152,7 +152,7 @@ public class CategoryServiceImpl extends ServiceImpl<CategoryDao, CategoryEntity
      *      CacheManager(RedisCacheManager)->Cache(RedisCache)->Cache负责缓存的读写
      * @return
      */
-    //@Cacheable(value = {"category"},key = "#root.method.name",sync = true)
+    @Cacheable(value = {"category"},key = "#root.method.name",sync = true)
     @Override
     public List<CategoryEntity> getLevel1Categorys() {
         System.out.println("getLevel1Categorys........");
