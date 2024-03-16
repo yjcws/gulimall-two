@@ -21,6 +21,9 @@ spring:
   redis:
     host: 192.168.56.60
     port: 6379
+    #关闭thymeleaf缓存
+  thymeleaf:
+    cache: false
 
 
 mybatis-plus:
@@ -41,3 +44,5 @@ gulimall:
     coreSize: 20
     maxSize: 200
     keepAliveTime: 10
+
+
