@@ -1,24 +1,29 @@
-package com.example.coupon.service.impl;/**
- * @ClassName: CouponServiceImpl
- * @Description:
- * @Author: yjc
- * @Date: 2023/4/5 22:47
- */
+package com.example.coupon.service.impl;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.example.common.utils.PageUtils;
+import com.example.common.utils.Query;
+import com.example.coupon.dao.CouponDao;
 import com.example.coupon.entity.CouponEntity;
 import com.example.coupon.service.CouponService;
+import org.springframework.stereotype.Service;
 
-/**
- * @ClassName: CouponServiceImpl
- * @Description:
- * @Author: yjc
- * @Date: 2023/4/5 22:47
- */
-public class CouponServiceImpl implements CouponService {
+import java.util.Map;
 
+
+@Service("couponService")
+public class CouponServiceImpl extends ServiceImpl<CouponDao, CouponEntity> implements CouponService {
 
     @Override
-    public CouponEntity couponTransactional() {
-        return null;
+    public PageUtils queryPage(Map<String, Object> params) {
+        IPage<CouponEntity> page = this.page(
+                new Query<CouponEntity>().getPage(params),
+                new QueryWrapper<CouponEntity>()
+        );
+
+        return new PageUtils(page);
     }
+
 }
