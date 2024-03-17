@@ -23,9 +23,9 @@
 #        - id: thrid-party-route
 #          uri: lb://gulimall-thrid-party
 #          predicates:
-#            - Path=/api/thridParty/**
+#            - Path=/api/thirdparty/**
 #          filters:
-#            - RewritePath=/api/thridParty/?(?<segment>.*), /thridParty/$\{segment}
+#            - RewritePath=/api/thirdparty/?(?<segment>.*), /thirdparty/$\{segment}
 #
 #        - id: member_route
 #          uri: lb://gulimall-member
