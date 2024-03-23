@@ -155,14 +155,14 @@ gulimall
 - 修改本机的host文件，映射域名端口
 
 ```
-192.168.77.130	gulimall.com
-192.168.77.130	search.gulimall.com
-192.168.77.130  item.gulimall.com
-192.168.77.130  auth.gulimall.com
-192.168.77.130  cart.gulimall.com
-192.168.77.130  order.gulimall.com
-192.168.77.130  member.gulimall.com
-192.168.77.130  seckill.gulimall.com
+192.168.56.60	gulimall.com
+192.168.56.60	search.gulimall.com
+192.168.56.60  item.gulimall.com
+192.168.56.60  auth.gulimall.com
+192.168.56.60  cart.gulimall.com
+192.168.56.60  order.gulimall.com
+192.168.56.60  member.gulimall.com
+192.168.56.60  seckill.gulimall.com
 以上端口换成自己Linux的ip地址
 ```
 
