@@ -12,6 +12,7 @@
         <result property="icon" column="icon"/>
         <result property="catelogId" column="catelog_id"/>
     </resultMap>
+
     <resultMap id="spuAttrGroup" type="com.example.product.vo.SpuItemAttrGroupVo">
         <result property="groupName" column="attr_group_name"/>
         <collection property="attrs" ofType="com.example.product.vo.Attr">
@@ -20,6 +21,7 @@
             <result property="attrValue" column="attr_value"></result>
         </collection>
     </resultMap>
+
     <select id="getAttrGroupWithAttrsBySpuId" resultMap="spuAttrGroup">
 
         SELECT
