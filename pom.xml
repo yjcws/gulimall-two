@@ -15,6 +15,7 @@
     </properties>
 
     <modules>
+        <module>gulimall-seckill</module>
         <module>gulimall-cart</module>
         <module>gulimall-auth-server</module>
         <module>gulimall-order</module>
